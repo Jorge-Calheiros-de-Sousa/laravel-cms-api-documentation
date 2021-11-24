@@ -1,0 +1,21 @@
+_id: req_f9c7a1bc6329458ca9cf01b891c203ce
+type: Request
+parentId: fld_4bf4ae3d4f694d1b8f0f7c94116e34f0
+modified: 1637711996850
+created: 1637711894575
+url: http://localhost/api/users
+name: index
+description: Retorna usuários cadastrados no banco
+method: GET
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1637711894575
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
