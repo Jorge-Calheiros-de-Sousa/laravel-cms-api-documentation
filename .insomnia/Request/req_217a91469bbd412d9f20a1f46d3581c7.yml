@@ -1,0 +1,31 @@
+_id: req_217a91469bbd412d9f20a1f46d3581c7
+type: Request
+parentId: fld_4bf4ae3d4f694d1b8f0f7c94116e34f0
+modified: 1637779167165
+created: 1637774557488
+url: "{{ _.baseUrl }}/api/users/13"
+name: destroy
+description: |
+  # Descrição
+
+  Delete o usuário e não retorna nada 
+
+
+  # Corpo da resposta( status:200 )
+  [
+
+       No body returned for response
+  ]
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1637774557488
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

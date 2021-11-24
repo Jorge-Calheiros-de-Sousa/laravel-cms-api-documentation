@@ -1,0 +1,26 @@
+_id: req_74469f7f25424e9d848025938cb16424
+type: Request
+parentId: fld_64269fc78d244c74834811edf502778f
+modified: 1637775083105
+created: 1637775052885
+url: "{{ _.baseUrl }}/api/posts/"
+name: update
+description: ""
+method: PUT
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6d9dee8fbb69472d9f6bbf0ac3273f81
+authentication: {}
+metaSortKey: -1637775052885
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

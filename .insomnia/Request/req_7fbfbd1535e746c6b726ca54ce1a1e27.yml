@@ -1,0 +1,31 @@
+_id: req_7fbfbd1535e746c6b726ca54ce1a1e27
+type: Request
+parentId: fld_64269fc78d244c74834811edf502778f
+modified: 1637779185970
+created: 1637775064222
+url: "{{ _.baseUrl }}/api/posts/1"
+name: destroy
+description: |
+  # Descrição
+
+  Delete o post e não retorna nada 
+
+
+  # Corpo da resposta( status:200 )
+  [
+
+       No body returned for response
+  ]
+method: DELETE
+body: {}
+parameters: []
+headers: []
+authentication: {}
+metaSortKey: -1637775064222
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

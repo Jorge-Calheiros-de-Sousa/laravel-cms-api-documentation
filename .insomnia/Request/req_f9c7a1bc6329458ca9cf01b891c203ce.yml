@@ -1,15 +1,121 @@
 _id: req_f9c7a1bc6329458ca9cf01b891c203ce
 type: Request
 parentId: fld_4bf4ae3d4f694d1b8f0f7c94116e34f0
-modified: 1637711996850
+modified: 1637779289934
 created: 1637711894575
-url: http://localhost/api/users
+url: "{{ _.baseUrl }}/api/users/13"
 name: index
-description: Retorna usuários cadastrados no banco
+description: |
+  # Descrição
+
+  Retorna usuários cadastrados no banco
+
+  *Obs*: retorna em formato de paginação.
+
+
+  # Paramentros e filtros
+
+  - page: Muda de pagina `ex: /api/users?page=2`
+  - name: Busca usuário pelo o nome `ex: /api/users?name=gabriel`
+  - /{id do usuário}: retorna apenas o usuário com o id `ex: /api/users/2`
+
+  # Corpo da resposta( status:200 )
+  [
+
+
+      {
+        "users": {
+          "current_page": 1,
+          "data": [
+            {
+              "id": 1,
+              "name": "Christop Koss III",
+              "email": "owisoky@example.net",
+              "email_verified_at": "2021-11-23T23:29:34.000000Z",
+              "created_at": "2021-11-23T23:29:34.000000Z",
+              "updated_at": "2021-11-23T23:29:34.000000Z"
+            },
+            {
+              "id": 2,
+              "name": "Mr. Burley Kris",
+              "email": "qbruen@example.org",
+              "email_verified_at": "2021-11-23T23:29:34.000000Z",
+              "created_at": "2021-11-23T23:29:34.000000Z",
+              "updated_at": "2021-11-23T23:29:34.000000Z"
+            },
+            {
+              "id": 3,
+              "name": "Maye Heller Jr.",
+              "email": "schuster.makenzie@example.net",
+              "email_verified_at": "2021-11-23T23:29:34.000000Z",
+              "created_at": "2021-11-23T23:29:34.000000Z",
+              "updated_at": "2021-11-23T23:29:34.000000Z"
+            },
+            {
+              "id": 4,
+              "name": "Michaela Rau",
+              "email": "nolan.louvenia@example.org",
+              "email_verified_at": "2021-11-23T23:29:34.000000Z",
+              "created_at": "2021-11-23T23:29:34.000000Z",
+              "updated_at": "2021-11-23T23:29:34.000000Z"
+            },
+            {
+              "id": 5,
+              "name": "Karina Ernser",
+              "email": "agoyette@example.org",
+              "email_verified_at": "2021-11-23T23:29:34.000000Z",
+              "created_at": "2021-11-23T23:29:34.000000Z",
+              "updated_at": "2021-11-23T23:29:34.000000Z"
+            }
+          ],
+          "first_page_url": "http:\/\/localhost\/api\/users?page=1",
+          "from": 1,
+          "last_page": 2,
+          "last_page_url": "http:\/\/localhost\/api\/users?page=2",
+          "links": [
+            {
+              "url": null,
+              "label": "&laquo; Previous",
+              "active": false
+            },
+            {
+              "url": "http:\/\/localhost\/api\/users?page=1",
+              "label": "1",
+              "active": true
+            },
+            {
+              "url": "http:\/\/localhost\/api\/users?page=2",
+              "label": "2",
+              "active": false
+            },
+            {
+              "url": "http:\/\/localhost\/api\/users?page=2",
+              "label": "Next &raquo;",
+              "active": false
+            }
+          ],
+          "next_page_url": "http:\/\/localhost\/api\/users?page=2",
+          "path": "http:\/\/localhost\/api\/users",
+          "per_page": 5,
+          "prev_page_url": null,
+          "to": 5,
+          "total": 10
+        }
+      }
+
+  ]
 method: GET
 body: {}
-parameters: []
-headers: []
+parameters:
+  - id: pair_96cb11a7672d49329b5276d48c3c309d
+    name: ""
+    value: ""
+    description: ""
+headers:
+  - id: pair_aaeb86a0d598439bb4500a66210cb2f5
+    name: ""
+    value: ""
+    description: ""
 authentication: {}
 metaSortKey: -1637711894575
 isPrivate: false

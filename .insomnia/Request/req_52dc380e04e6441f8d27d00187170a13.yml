@@ -1,0 +1,26 @@
+_id: req_52dc380e04e6441f8d27d00187170a13
+type: Request
+parentId: fld_64269fc78d244c74834811edf502778f
+modified: 1637779276172
+created: 1637775041885
+url: "{{ _.baseUrl }}/api/posts/"
+name: store
+description: ""
+method: POST
+body:
+  mimeType: application/json
+  text: ""
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_9711310e61a54d54ad5ca24d80017a02
+authentication: {}
+metaSortKey: -1637775041885
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

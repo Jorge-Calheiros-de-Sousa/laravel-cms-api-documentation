@@ -1,0 +1,86 @@
+_id: req_5e25aaef9a2a4f2e820ae749b677a28a
+type: Request
+parentId: fld_4bf4ae3d4f694d1b8f0f7c94116e34f0
+modified: 1637779305276
+created: 1637774001670
+url: "{{ _.baseUrl }}/api/users/13"
+name: update
+description: >-
+  # Descrição
+
+
+  Atualiza o nome e email do usuário cadastrado e rotorna o proprio usuário
+
+
+  *Obs: usuário precisa estar no banco de dados*
+
+
+  # Corpo da requisição
+
+
+  [
+
+      {
+  	"name": "string",
+  	"email": "string",
+  	"password" : "string"
+      }
+  ]
+
+
+  # Corpo da resposta( status:200 )
+
+  [
+
+         Retorna o usuário atualizado
+
+      {
+        "user": {
+          "id": 13,
+          "name": "Teste1",
+          "email": "teste@gmail.com",
+          "email_verified_at": null,
+          "created_at": "2021-11-24T18:06:30.000000Z",
+          "updated_at": "2021-11-24T18:06:30.000000Z"
+        }
+      }
+  ]
+
+  # Corpo da resposta com erros
+
+
+  1. Senha não compativel com a senha cadastrada no banco de dados
+
+      [
+      
+      
+         {
+            "errors": {
+              "modal-message": "user.error.update", // frase não traduzida ainda
+              "modal-dev-message": "App\\Repositories\\Implementations\\AbstractRepository::update(): Argument #2 ($data) must be of type array, Illuminate\\Http\\RedirectResponse given, called in \/var\/www\/html\/app\/Http\/Controllers\/UserController.php on line 76"
+            }
+          }
+      ]
+method: PUT
+body:
+  mimeType: application/json
+  text: |-
+    {
+    	"name": "Teste1Update",
+    	"email": "tsste@gmail.com",
+    	"password" : "password"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_c337c9d4649049fe80ac69a8944178b7
+authentication: {}
+metaSortKey: -1637774001670
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global

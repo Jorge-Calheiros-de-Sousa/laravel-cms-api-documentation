@@ -1,0 +1,14 @@
+_id: env_18b847dc85bf4cd799bb5030aba6098b
+type: Environment
+parentId: env_3a55c37698154c638ba4d95cb24cc6daa66018e8
+modified: 1637773596285
+created: 1637712966633
+name: laravel-cms-api local
+data:
+  baseUrl: http://localhost
+dataPropertyOrder:
+  "&":
+    - baseUrl
+color: "#577edb"
+isPrivate: false
+metaSortKey: 1637712966633

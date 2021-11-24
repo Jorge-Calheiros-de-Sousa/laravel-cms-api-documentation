@@ -1,0 +1,101 @@
+_id: req_7354103e027e450b9655700b2fcc4ff5
+type: Request
+parentId: fld_4bf4ae3d4f694d1b8f0f7c94116e34f0
+modified: 1637779304893
+created: 1637713805269
+url: "{{ _.baseUrl }}/api/users"
+name: store
+description: >-
+  # Descrição
+
+
+  Cadastra um usuário
+
+
+  # Corpo da requisição
+
+
+  [
+
+      {
+          "name": "string",
+          "email": "string",
+          "password": "$2y$10$WKjcJnYbBFYyZeyrgyLOQ.Vnwx78HoKkNjPi6rVo9mYceNwUPKiia", // password
+  	    "password_confirmation" : "$2y$10$WKjcJnYbBFYyZeyrgyLOQ.Vnwx78HoKkNjPi6rVo9mYceNwUPKiia"
+      }
+  ]
+
+
+  # Corpo da resposta( status:200 )
+
+  [
+
+      {
+        "user": true
+      }
+  ]
+
+  # Corpo da respostas com erros
+
+
+  1. Usuário já existe no banco de dados
+
+      [
+      
+      
+          {
+            "message": "The given data was invalid.",
+            "errors": {
+              "email": [
+                "The email has already been taken."
+              ]
+            }
+          }
+      ]
+
+  2. Senhas de não são iguais
+      
+      [
+      
+      
+          {
+            "message": "The given data was invalid.",
+            "errors": {
+              "password": [
+                "The password confirmation does not match."
+              ]
+            }
+          }
+      ]
+method: POST
+body:
+  mimeType: application/json
+  text: >-
+    {
+    	"name": "Teste1",
+    	"email": "teste@gmail.com",
+    	"password": "$2y$10$WKjcJnYbBFYyZeyrgyLOQ.Vnwx78HoKkNjPi6rVo9mYceNwUPKiia",
+    	"password_confirmation" : "$2y$10$WKjcJnYbBFYyZeyrgyLOQ.Vnwx78HoKkNjPi6rVo9mYceNwUPKiia"
+    }
+parameters: []
+headers:
+  - name: Content-Type
+    value: application/json
+    id: pair_6e5b9f786a9042bca01927e60e8ac069
+  - id: pair_10ca0d481a3048fbb6df2e5b66a9d5ac
+    name: Accept
+    value: application/json
+    description: ""
+  - id: pair_be92995f90f8430c97b971c98e3688bf
+    name: ""
+    value: ""
+    description: ""
+authentication: {}
+metaSortKey: -1637713805269
+isPrivate: false
+settingStoreCookies: true
+settingSendCookies: true
+settingDisableRenderRequestBody: false
+settingEncodeUrl: true
+settingRebuildPath: true
+settingFollowRedirects: global
